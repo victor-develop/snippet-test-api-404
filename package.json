@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "install-global": "npm install ts-node chai mocha typescript @types/mocha @types/node @types/chai --save --global",
-    "install-local": "npm install typescript ts-node chai mocha @types/mocha @types/node @types/chai --save",
+    "install-global": "npm install ts-node mocha typescript @types/mocha @types/node --save --global",
+    "install-local": "npm install typescript ts-node mocha @types/mocha @types/node --save",
     "postinstall": "npm run install-global && npm run install-local",
     "test": "mocha --require ts-node/register src/**/*.spec.ts"
   },
@@ -24,7 +24,7 @@
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {
-    "@types/chai": "^4.1.0",
+    "@types/chai": "^4.1.1",
     "@types/mocha": "^2.2.46",
     "@types/node": "^9.3.0",
     "chai": "^4.1.2",
@@ -33,4 +33,3 @@
     "typescript": "^2.6.2"
   }
 }
-
