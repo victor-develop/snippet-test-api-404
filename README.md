@@ -1,6 +1,6 @@
 ### Test Api Client
 This Typescript project includes a test snippet. It tests the class `FooApiClient`'s behavior of handling a 404 error when accessing the `/bar` api point.
-It was assumed that this class make use of a `IHttpClient` to make requests, and is expected to return a correct `APICallError` instance via a rejected Promise.
+It was assumed that this class make use of a `IHttpClient` to make requests, and is expected to return a correct `APICallError` instance via a rejected Promise. __In a real project the intereaction between `FooApiClient` and `IHttpClient` should also be tested with some more test cases, e.g. whether it really calls its `IHttpClient`. __
 
 ### Snippet Path
 It was at `./src/tests/foo-api-client.spec.ts`
