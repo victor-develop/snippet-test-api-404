@@ -1,0 +1,36 @@
+{
+  "name": "test-api-client",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "install-global": "npm install ts-node chai mocha typescript @types/mocha @types/node @types/chai --save --global",
+    "install-local": "npm install typescript ts-node chai mocha @types/mocha @types/node @types/chai --save",
+    "postinstall": "npm run install-global && npm run install-local",
+    "test": "mocha --require ts-node/register src/**/*.spec.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "typescript",
+    "mocha",
+    "sourcemaps",
+    "node",
+    "npm scripts",
+    "tsc"
+  ],
+  "author": "victor.develop@outlook.com",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "@types/chai": "^4.1.0",
+    "@types/mocha": "^2.2.46",
+    "@types/node": "^9.3.0",
+    "chai": "^4.1.2",
+    "mocha": "^4.1.0",
+    "ts-node": "^4.1.0",
+    "typescript": "^2.6.2"
+  }
+}
+
